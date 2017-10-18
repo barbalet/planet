@@ -33,6 +33,11 @@
  
  ****************************************************************/
 
-/*NOBLEMAKE VAR=""*/
+#include "noble.h"
 
+long  gpi_init(unsigned long kseed);
+void  gpi_cycle(void);
+
+unsigned char  gpi_key(unsigned short num);
+unsigned char  gpi_mouse(short px, short py);
 

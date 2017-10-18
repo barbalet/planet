@@ -33,32 +33,25 @@
  
  ****************************************************************/
 
-/*NOBLEMAKE VAR=""*/
-
-
 #include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 #include "noble.h"
+#include "planet.h"
 
-//#ifdef    _WIN32
-//#include "..\..\gpi\gpi.h"
-//#else
-//#include "../../gpi/gpi.h"
-//#endif
-
-
-#define GPI_DIMENSION_X 512
-#define GPI_DIMENSION_Y 512
+#define     GPI_DIMENSION_X 800
+#define     GPI_DIMENSION_Y 600
 
 #define		DDC_PI		  	(3.14159265358979323846)
 
 #define		MAXPNTS		 	150000
 
+#define     MULTIPLY        2048
+#define     BITSHIFT        11
+
 #define		SCRX	        (GPI_DIMENSION_X<<(BITSHIFT-1))
 #define		SCRY	        (GPI_DIMENSION_Y<<(BITSHIFT-1))
-
-#define		MULTIPLY		2048
-#define		BITSHIFT		11
 
 #define		RADIUS	     	210
 #define		CCUTNUM         6
@@ -78,9 +71,7 @@
 #define	TURN_MINUS			(512-TURN_PLUS)
 #define	CENTRE_BLOCK		43
 
-
-#define	SPACESIZE			(GPI_DIMENSION_X*(GPI_DIMENSION_Y>>3))
-
+long           pres[16384*2], dl[16384*2];
 
 double	       sv[512];
 
@@ -92,24 +83,6 @@ double		   rm[9]={
 
 long			points[MAXPNTS*3];
 unsigned long	numpn;
-
-unsigned char	*newSpace;//[SPACESIZE];
-
-/*	wrap-around round function	*/
-
-unsigned char 	gpi_key(unsigned short num);
-unsigned char  	gpi_mouse(short px, short py);
-
-void  			roundland_z(short * land_z);
-
-void * 			gpi_init(unsigned long kseed);
-long  			gpi_cycle(unsigned char first);
-
-/*NOBLEMAKE END=""*/
-
-
-#include <stdlib.h>
-/*NOBLEMAKE END=""*/
 
 n_int draw_error(n_constant_string error_text, n_constant_string location, n_int line_number)
 {
@@ -220,7 +193,7 @@ unsigned char	move=0;
 
 #define	LAND_LONG_SHORT1 (LAND_LONG_END*LAND_SHORT_END1)
 
-void roundland_z(short * land_z) {
+static void roundland_z(short * land_z) {
 	unsigned long	lpx = 0, lpy = 1;
 	long	tarr[LAND_LONG_END*2]; /*	512 x 2 buffer array and first line buffer for final line wrap around	*/
 	long	temp = 0;
@@ -403,12 +376,7 @@ short scr_y=0;
 	}
 }
 
-
-
-long			pres[16384*2], dl[16384*2];
-
-
-void * gpi_init(unsigned long kseed){
+long gpi_init(unsigned long kseed){
 	unsigned char	refine = 0;
 	unsigned long	major = 0, minor = 0;
 	unsigned long	tx, ty, mx, my, px, py;
@@ -417,7 +385,7 @@ void * gpi_init(unsigned long kseed){
 
   if (land_z == 0L)
   {
-    return 0L;
+     return -1;
   }
   
 	while (major < 512) {
@@ -503,7 +471,7 @@ void * gpi_init(unsigned long kseed){
 	find_dxdy(land_z, pres, dl);
 	draw_weather(pres);
 	io_free((void*) land_z);
-	return((void *)newSpace);
+    return 1;
 }
 
 
@@ -527,41 +495,44 @@ static void	draw_3d_points(long * pnts, unsigned long loopend){
 		
 		long	scr_z = ((a6 * act_x) + (a7 * act_y) + (a8 * act_z))>>BITSHIFT;
 		if ( scr_z > 0) {
+            n_vect2 scr;
 			scr_z = MULTIPLY + (scr_z>>(BITSHIFT+3));			
 			act_x = (act_x * scr_z)>> BITSHIFT;
 			act_y = (act_y * scr_z)>> BITSHIFT;
 			act_z = (act_z * scr_z)>> BITSHIFT;
-			{
-				long	scr_x = (((a0 * act_x) + (a1 * act_y) + (a2 * act_z) )>>(BITSHIFT*2)) + (SCRX>>BITSHIFT);
-				long	scr_y = (((a3 * act_x) + (a4 * act_y) + (a5 * act_z) )>>(BITSHIFT*2)) + (SCRY>>BITSHIFT);
-				//plat_pointset(newSpace,scr_x,scr_y);
-#ifdef BIG_DOT
-//                plat_pointset(newSpace,scr_x,scr_y+1);
-//                plat_pointset(newSpace,scr_x,scr_y-1);
-//                plat_pointset(newSpace,scr_x+1,scr_y);
-//                plat_pointset(newSpace,scr_x-1,scr_y);
-#endif
-			}			
+			scr.x = (((a0 * act_x) + (a1 * act_y) + (a2 * act_z) )>>(BITSHIFT*2)) + (SCRX>>BITSHIFT);
+			scr.y = (((a3 * act_x) + (a4 * act_y) + (a5 * act_z) )>>(BITSHIFT*2)) + (SCRY>>BITSHIFT);
+            
+            gldraw_vertex(&scr);
+            
+            scr.x -= 1;
+            gldraw_vertex(&scr);
+            scr.x += 2;
+            gldraw_vertex(&scr);
+            scr.x -= 1;
+            scr.y -= 1;
+            gldraw_vertex(&scr);
+            scr.y += 2;
+            gldraw_vertex(&scr);
 		}
 	}
 
 }
 
 
-long   gpi_cycle(unsigned char first){		
-	if(first){
-
+void   gpi_cycle(void){
+    gldraw_background_black();
+    
+    gldraw_start_points();
 #ifdef WEATHER_RENDERED
-		deetee(pres,dl);
-		if((landtime&BINARY_NUMBER)==0){
-			draw_weather(pres);
-		}
-		draw_3d_points( weather_points , num_weather_points );
+    deetee(pres,dl);
+    if((landtime&BINARY_NUMBER)==0){
+        draw_weather(pres);
+    }
+    
+    draw_3d_points( weather_points , num_weather_points );
 #endif
-		draw_3d_points( points , numpn );
-	}else{
-		//plat_erase(newSpace);
-	}
-	return 0;
+    draw_3d_points( points , numpn );
+    gldraw_end_points();
 }
 

@@ -43,9 +43,7 @@ shared_cycle_state shared_cycle(n_uint ticks, n_byte fIdentification, n_int dim_
 
 n_int shared_init(n_byte view, n_uint random)
 {
-
-    
-    return -1;
+    return  gpi_init(random);
 }
 
 void shared_close(void)
@@ -87,6 +85,10 @@ void shared_mouseOption(n_byte option)
 
 void shared_mouseReceived(n_int valX, n_int valY, n_byte fIdentification)
 {
+    /* void  gpi_cycle(void);
+     
+     unsigned char  gpi_key(unsigned short num);
+     unsigned char  gpi_mouse(short px, short py);*/
 }
 
 void shared_mouseUp(void)
@@ -101,12 +103,11 @@ void shared_about(n_constant_string value)
 
 void shared_draw(n_byte * outputBuffer, n_byte fIdentification, n_int dim_x, n_int dim_y, n_byte changed)
 {
-
+    gpi_cycle();
 }
 
 n_int shared_new(n_uint seed)
 {
-    
     return 0;
 }
 
