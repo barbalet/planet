@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A1167691F972A1D00E9D9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1167681F972A1D00E9D9A3 /* Assets.xcassets */; };
+		4A11676C1F972A1D00E9D9A3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A11676A1F972A1D00E9D9A3 /* MainMenu.xib */; };
+		4A4F79941F97314800296808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F798D1F97314700296808 /* main.m */; };
+		4A4F79951F97314800296808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F798E1F97314700296808 /* AppDelegate.m */; };
+		4A4F79961F97314800296808 /* NobleMacView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79911F97314800296808 /* NobleMacView.m */; };
+		4A4F79971F97314800296808 /* NobleShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79931F97314800296808 /* NobleShared.m */; };
+		4A4F799A1F97315A00296808 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79981F97315A00296808 /* shared.c */; };
+		4A4F799B1F97315A00296808 /* draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79991F97315A00296808 /* draw.c */; };
+		4A4F79A91F97317600296808 /* gldraw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799C1F97317500296808 /* gldraw.c */; };
+		4A4F79AA1F97317600296808 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799D1F97317500296808 /* network.c */; };
+		4A4F79AB1F97317600296808 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799E1F97317500296808 /* parse.c */; };
+		4A4F79AC1F97317600296808 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799F1F97317500296808 /* io.c */; };
+		4A4F79AD1F97317600296808 /* interpret.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A01F97317500296808 /* interpret.c */; };
+		4A4F79AE1F97317600296808 /* territory.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A11F97317500296808 /* territory.c */; };
+		4A4F79AF1F97317600296808 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A41F97317500296808 /* audio.c */; };
+		4A4F79B01F97317600296808 /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A51F97317600296808 /* object.c */; };
+		4A4F79B11F97317600296808 /* land.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A61F97317600296808 /* land.c */; };
+		4A4F79B21F97317600296808 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A71F97317600296808 /* compress.c */; };
+		4A4F79B31F97317600296808 /* math.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A81F97317600296808 /* math.c */; };
+		4A4F79B61F97318500296808 /* planet.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79B51F97318500296808 /* planet.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A1167621F972A1D00E9D9A3 /* Planet Noble Ape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet Noble Ape.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A1167681F972A1D00E9D9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A11676B1F972A1D00E9D9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4A11676D1F972A1D00E9D9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1167701F972A1D00E9D9A3 /* Planet_Noble_Ape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Planet_Noble_Ape.entitlements; sourceTree = "<group>"; };
+		4A4F798D1F97314700296808 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../nobleape/sim/mac/main.m; sourceTree = "<group>"; };
+		4A4F798E1F97314700296808 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../nobleape/sim/mac/AppDelegate.m; sourceTree = "<group>"; };
+		4A4F798F1F97314700296808 /* NobleShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NobleShared.h; path = ../../../nobleape/sim/mac/NobleShared.h; sourceTree = "<group>"; };
+		4A4F79901F97314700296808 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../nobleape/sim/mac/AppDelegate.h; sourceTree = "<group>"; };
+		4A4F79911F97314800296808 /* NobleMacView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NobleMacView.m; path = ../../../nobleape/sim/mac/NobleMacView.m; sourceTree = "<group>"; };
+		4A4F79921F97314800296808 /* NobleMacView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NobleMacView.h; path = ../../../nobleape/sim/mac/NobleMacView.h; sourceTree = "<group>"; };
+		4A4F79931F97314800296808 /* NobleShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NobleShared.m; path = ../../../nobleape/sim/mac/NobleShared.m; sourceTree = "<group>"; };
+		4A4F79981F97315A00296808 /* shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shared.c; path = ../../gui/shared.c; sourceTree = "<group>"; };
+		4A4F79991F97315A00296808 /* draw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = draw.c; path = ../../gui/draw.c; sourceTree = "<group>"; };
+		4A4F799C1F97317500296808 /* gldraw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gldraw.c; path = ../../../nobleape/sim/noble/gldraw.c; sourceTree = "<group>"; };
+		4A4F799D1F97317500296808 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = network.c; path = ../../../nobleape/sim/noble/network.c; sourceTree = "<group>"; };
+		4A4F799E1F97317500296808 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parse.c; path = ../../../nobleape/sim/noble/parse.c; sourceTree = "<group>"; };
+		4A4F799F1F97317500296808 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io.c; path = ../../../nobleape/sim/noble/io.c; sourceTree = "<group>"; };
+		4A4F79A01F97317500296808 /* interpret.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = interpret.c; path = ../../../nobleape/sim/noble/interpret.c; sourceTree = "<group>"; };
+		4A4F79A11F97317500296808 /* territory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = territory.c; path = ../../../nobleape/sim/noble/territory.c; sourceTree = "<group>"; };
+		4A4F79A21F97317500296808 /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shared.h; path = ../../../nobleape/sim/noble/shared.h; sourceTree = "<group>"; };
+		4A4F79A31F97317500296808 /* noble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = noble.h; path = ../../../nobleape/sim/noble/noble.h; sourceTree = "<group>"; };
+		4A4F79A41F97317500296808 /* audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = audio.c; path = ../../../nobleape/sim/noble/audio.c; sourceTree = "<group>"; };
+		4A4F79A51F97317600296808 /* object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object.c; path = ../../../nobleape/sim/noble/object.c; sourceTree = "<group>"; };
+		4A4F79A61F97317600296808 /* land.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = land.c; path = ../../../nobleape/sim/noble/land.c; sourceTree = "<group>"; };
+		4A4F79A71F97317600296808 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compress.c; path = ../../../nobleape/sim/noble/compress.c; sourceTree = "<group>"; };
+		4A4F79A81F97317600296808 /* math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = math.c; path = ../../../nobleape/sim/noble/math.c; sourceTree = "<group>"; };
+		4A4F79B41F97318500296808 /* planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = planet.h; path = ../../planet/planet.h; sourceTree = "<group>"; };
+		4A4F79B51F97318500296808 /* planet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = planet.c; path = ../../planet/planet.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A11675F1F972A1D00E9D9A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A1167591F972A1D00E9D9A3 = {
+			isa = PBXGroup;
+			children = (
+				4A4F798C1F97311F00296808 /* mac */,
+				4A4F798B1F97310600296808 /* gui */,
+				4A4F798A1F97310200296808 /* noble */,
+				4A4F79891F9730E900296808 /* planet */,
+				4A1167641F972A1D00E9D9A3 /* Planet Noble Ape */,
+				4A1167631F972A1D00E9D9A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A1167631F972A1D00E9D9A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A1167621F972A1D00E9D9A3 /* Planet Noble Ape.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A1167641F972A1D00E9D9A3 /* Planet Noble Ape */ = {
+			isa = PBXGroup;
+			children = (
+				4A1167681F972A1D00E9D9A3 /* Assets.xcassets */,
+				4A11676A1F972A1D00E9D9A3 /* MainMenu.xib */,
+				4A11676D1F972A1D00E9D9A3 /* Info.plist */,
+				4A1167701F972A1D00E9D9A3 /* Planet_Noble_Ape.entitlements */,
+			);
+			path = "Planet Noble Ape";
+			sourceTree = "<group>";
+		};
+		4A4F79891F9730E900296808 /* planet */ = {
+			isa = PBXGroup;
+			children = (
+				4A4F79B51F97318500296808 /* planet.c */,
+				4A4F79B41F97318500296808 /* planet.h */,
+			);
+			name = planet;
+			path = "Planet Noble Ape";
+			sourceTree = "<group>";
+		};
+		4A4F798A1F97310200296808 /* noble */ = {
+			isa = PBXGroup;
+			children = (
+				4A4F79A41F97317500296808 /* audio.c */,
+				4A4F79A71F97317600296808 /* compress.c */,
+				4A4F799C1F97317500296808 /* gldraw.c */,
+				4A4F79A01F97317500296808 /* interpret.c */,
+				4A4F799F1F97317500296808 /* io.c */,
+				4A4F79A61F97317600296808 /* land.c */,
+				4A4F79A81F97317600296808 /* math.c */,
+				4A4F799D1F97317500296808 /* network.c */,
+				4A4F79A31F97317500296808 /* noble.h */,
+				4A4F79A51F97317600296808 /* object.c */,
+				4A4F799E1F97317500296808 /* parse.c */,
+				4A4F79A21F97317500296808 /* shared.h */,
+				4A4F79A11F97317500296808 /* territory.c */,
+			);
+			name = noble;
+			path = "Planet Noble Ape";
+			sourceTree = "<group>";
+		};
+		4A4F798B1F97310600296808 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				4A4F79991F97315A00296808 /* draw.c */,
+				4A4F79981F97315A00296808 /* shared.c */,
+			);
+			name = gui;
+			path = "Planet Noble Ape";
+			sourceTree = "<group>";
+		};
+		4A4F798C1F97311F00296808 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				4A4F79901F97314700296808 /* AppDelegate.h */,
+				4A4F798E1F97314700296808 /* AppDelegate.m */,
+				4A4F798D1F97314700296808 /* main.m */,
+				4A4F79921F97314800296808 /* NobleMacView.h */,
+				4A4F79911F97314800296808 /* NobleMacView.m */,
+				4A4F798F1F97314700296808 /* NobleShared.h */,
+				4A4F79931F97314800296808 /* NobleShared.m */,
+			);
+			name = mac;
+			path = "Planet Noble Ape";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A1167611F972A1D00E9D9A3 /* Planet Noble Ape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A1167731F972A1D00E9D9A3 /* Build configuration list for PBXNativeTarget "Planet Noble Ape" */;
+			buildPhases = (
+				4A11675E1F972A1D00E9D9A3 /* Sources */,
+				4A11675F1F972A1D00E9D9A3 /* Frameworks */,
+				4A1167601F972A1D00E9D9A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Planet Noble Ape";
+			productName = "Planet Noble Ape";
+			productReference = 4A1167621F972A1D00E9D9A3 /* Planet Noble Ape.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A11675A1F972A1D00E9D9A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Thomas Barbalet";
+				TargetAttributes = {
+					4A1167611F972A1D00E9D9A3 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4A11675D1F972A1D00E9D9A3 /* Build configuration list for PBXProject "Planet Noble Ape" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A1167591F972A1D00E9D9A3;
+			productRefGroup = 4A1167631F972A1D00E9D9A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A1167611F972A1D00E9D9A3 /* Planet Noble Ape */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A1167601F972A1D00E9D9A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A1167691F972A1D00E9D9A3 /* Assets.xcassets in Resources */,
+				4A11676C1F972A1D00E9D9A3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A11675E1F972A1D00E9D9A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4F79AB1F97317600296808 /* parse.c in Sources */,
+				4A4F79951F97314800296808 /* AppDelegate.m in Sources */,
+				4A4F79AD1F97317600296808 /* interpret.c in Sources */,
+				4A4F79B31F97317600296808 /* math.c in Sources */,
+				4A4F799B1F97315A00296808 /* draw.c in Sources */,
+				4A4F799A1F97315A00296808 /* shared.c in Sources */,
+				4A4F79961F97314800296808 /* NobleMacView.m in Sources */,
+				4A4F79AF1F97317600296808 /* audio.c in Sources */,
+				4A4F79B21F97317600296808 /* compress.c in Sources */,
+				4A4F79AC1F97317600296808 /* io.c in Sources */,
+				4A4F79B01F97317600296808 /* object.c in Sources */,
+				4A4F79B61F97318500296808 /* planet.c in Sources */,
+				4A4F79AA1F97317600296808 /* network.c in Sources */,
+				4A4F79B11F97317600296808 /* land.c in Sources */,
+				4A4F79AE1F97317600296808 /* territory.c in Sources */,
+				4A4F79941F97314800296808 /* main.m in Sources */,
+				4A4F79971F97314800296808 /* NobleShared.m in Sources */,
+				4A4F79A91F97317600296808 /* gldraw.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A11676A1F972A1D00E9D9A3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A11676B1F972A1D00E9D9A3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A1167711F972A1D00E9D9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A1167721F972A1D00E9D9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A1167741F972A1D00E9D9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Planet Noble Ape/Planet_Noble_Ape.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Planet Noble Ape/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nobleape.Planet-Noble-Ape";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A1167751F972A1D00E9D9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Planet Noble Ape/Planet_Noble_Ape.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Planet Noble Ape/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nobleape.Planet-Noble-Ape";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A11675D1F972A1D00E9D9A3 /* Build configuration list for PBXProject "Planet Noble Ape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A1167711F972A1D00E9D9A3 /* Debug */,
+				4A1167721F972A1D00E9D9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A1167731F972A1D00E9D9A3 /* Build configuration list for PBXNativeTarget "Planet Noble Ape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A1167741F972A1D00E9D9A3 /* Debug */,
+				4A1167751F972A1D00E9D9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A11675A1F972A1D00E9D9A3 /* Project object */;
+}
