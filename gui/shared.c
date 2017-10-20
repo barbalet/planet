@@ -70,7 +70,7 @@ void shared_rotate(n_double num, n_byte wwind)
 
 void shared_keyReceived(n_byte2 value, n_byte fIdentification)
 {
-    
+    (void)gpi_key(value);
 }
 
 void shared_keyUp(void)
@@ -85,10 +85,7 @@ void shared_mouseOption(n_byte option)
 
 void shared_mouseReceived(n_int valX, n_int valY, n_byte fIdentification)
 {
-    /* void  gpi_cycle(void);
-     
-     unsigned char  gpi_key(unsigned short num);
-     unsigned char  gpi_mouse(short px, short py);*/
+     (void)gpi_mouse(valX, valY);
 }
 
 void shared_mouseUp(void)

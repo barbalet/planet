@@ -35,9 +35,9 @@
 
 #include "noble.h"
 
-long  gpi_init(unsigned long kseed);
+long  gpi_init(n_uint kseed);
 void  gpi_cycle(void);
 
-unsigned char  gpi_key(unsigned short num);
-unsigned char  gpi_mouse(short px, short py);
+n_byte  gpi_key(n_byte2 num);
+n_byte  gpi_mouse(n_int px, n_int py);
 

@@ -7,168 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A1167691F972A1D00E9D9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1167681F972A1D00E9D9A3 /* Assets.xcassets */; };
-		4A11676C1F972A1D00E9D9A3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A11676A1F972A1D00E9D9A3 /* MainMenu.xib */; };
-		4A4F79941F97314800296808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F798D1F97314700296808 /* main.m */; };
-		4A4F79951F97314800296808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F798E1F97314700296808 /* AppDelegate.m */; };
-		4A4F79961F97314800296808 /* NobleMacView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79911F97314800296808 /* NobleMacView.m */; };
-		4A4F79971F97314800296808 /* NobleShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79931F97314800296808 /* NobleShared.m */; };
-		4A4F799A1F97315A00296808 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79981F97315A00296808 /* shared.c */; };
-		4A4F799B1F97315A00296808 /* draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79991F97315A00296808 /* draw.c */; };
-		4A4F79A91F97317600296808 /* gldraw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799C1F97317500296808 /* gldraw.c */; };
-		4A4F79AA1F97317600296808 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799D1F97317500296808 /* network.c */; };
-		4A4F79AB1F97317600296808 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799E1F97317500296808 /* parse.c */; };
-		4A4F79AC1F97317600296808 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F799F1F97317500296808 /* io.c */; };
-		4A4F79AD1F97317600296808 /* interpret.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A01F97317500296808 /* interpret.c */; };
-		4A4F79AE1F97317600296808 /* territory.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A11F97317500296808 /* territory.c */; };
-		4A4F79AF1F97317600296808 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A41F97317500296808 /* audio.c */; };
-		4A4F79B01F97317600296808 /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A51F97317600296808 /* object.c */; };
-		4A4F79B11F97317600296808 /* land.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A61F97317600296808 /* land.c */; };
-		4A4F79B21F97317600296808 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A71F97317600296808 /* compress.c */; };
-		4A4F79B31F97317600296808 /* math.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79A81F97317600296808 /* math.c */; };
-		4A4F79B61F97318500296808 /* planet.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F79B51F97318500296808 /* planet.c */; };
+		4A2AE5201F99C21500855A9A /* mac.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AE51F1F99C21500855A9A /* mac.xib */; };
+		4A8FCDD31F98794E00EBEC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8FCDD21F98794E00EBEC62 /* Assets.xcassets */; };
+		4A8FCDF11F98799300EBEC62 /* gldraw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE41F98799200EBEC62 /* gldraw.c */; };
+		4A8FCDF21F98799300EBEC62 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE51F98799200EBEC62 /* network.c */; };
+		4A8FCDF31F98799300EBEC62 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE61F98799200EBEC62 /* parse.c */; };
+		4A8FCDF41F98799300EBEC62 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE71F98799200EBEC62 /* io.c */; };
+		4A8FCDF51F98799300EBEC62 /* interpret.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE81F98799200EBEC62 /* interpret.c */; };
+		4A8FCDF61F98799300EBEC62 /* territory.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE91F98799200EBEC62 /* territory.c */; };
+		4A8FCDF71F98799300EBEC62 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDEC1F98799200EBEC62 /* audio.c */; };
+		4A8FCDF81F98799300EBEC62 /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDED1F98799200EBEC62 /* object.c */; };
+		4A8FCDF91F98799300EBEC62 /* land.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDEE1F98799200EBEC62 /* land.c */; };
+		4A8FCDFA1F98799300EBEC62 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDEF1F98799200EBEC62 /* compress.c */; };
+		4A8FCDFB1F98799300EBEC62 /* math.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDF01F98799200EBEC62 /* math.c */; };
+		4A8FCE031F9879AC00EBEC62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDFC1F9879AC00EBEC62 /* main.m */; };
+		4A8FCE041F9879AC00EBEC62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDFD1F9879AC00EBEC62 /* AppDelegate.m */; };
+		4A8FCE051F9879AC00EBEC62 /* NobleMacView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCE001F9879AC00EBEC62 /* NobleMacView.m */; };
+		4A8FCE061F9879AC00EBEC62 /* NobleShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCE021F9879AC00EBEC62 /* NobleShared.m */; };
+		4A8FCE091F9879BB00EBEC62 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCE071F9879BB00EBEC62 /* shared.c */; };
+		4A8FCE0A1F9879BB00EBEC62 /* draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCE081F9879BB00EBEC62 /* draw.c */; };
+		4A8FCE0D1F9879C800EBEC62 /* planet.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCE0C1F9879C800EBEC62 /* planet.c */; };
+		4A8FCE101F98803C00EBEC62 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FCE0F1F98803C00EBEC62 /* OpenGL.framework */; };
+		4A8FCE121F98806300EBEC62 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FCE111F98806300EBEC62 /* AppKit.framework */; };
+		4A8FCE141F98807B00EBEC62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FCE131F98807B00EBEC62 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A1167621F972A1D00E9D9A3 /* Planet Noble Ape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet Noble Ape.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A1167681F972A1D00E9D9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A11676B1F972A1D00E9D9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4A11676D1F972A1D00E9D9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A1167701F972A1D00E9D9A3 /* Planet_Noble_Ape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Planet_Noble_Ape.entitlements; sourceTree = "<group>"; };
-		4A4F798D1F97314700296808 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../nobleape/sim/mac/main.m; sourceTree = "<group>"; };
-		4A4F798E1F97314700296808 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../nobleape/sim/mac/AppDelegate.m; sourceTree = "<group>"; };
-		4A4F798F1F97314700296808 /* NobleShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NobleShared.h; path = ../../../nobleape/sim/mac/NobleShared.h; sourceTree = "<group>"; };
-		4A4F79901F97314700296808 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../nobleape/sim/mac/AppDelegate.h; sourceTree = "<group>"; };
-		4A4F79911F97314800296808 /* NobleMacView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NobleMacView.m; path = ../../../nobleape/sim/mac/NobleMacView.m; sourceTree = "<group>"; };
-		4A4F79921F97314800296808 /* NobleMacView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NobleMacView.h; path = ../../../nobleape/sim/mac/NobleMacView.h; sourceTree = "<group>"; };
-		4A4F79931F97314800296808 /* NobleShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NobleShared.m; path = ../../../nobleape/sim/mac/NobleShared.m; sourceTree = "<group>"; };
-		4A4F79981F97315A00296808 /* shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shared.c; path = ../../gui/shared.c; sourceTree = "<group>"; };
-		4A4F79991F97315A00296808 /* draw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = draw.c; path = ../../gui/draw.c; sourceTree = "<group>"; };
-		4A4F799C1F97317500296808 /* gldraw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gldraw.c; path = ../../../nobleape/sim/noble/gldraw.c; sourceTree = "<group>"; };
-		4A4F799D1F97317500296808 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = network.c; path = ../../../nobleape/sim/noble/network.c; sourceTree = "<group>"; };
-		4A4F799E1F97317500296808 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parse.c; path = ../../../nobleape/sim/noble/parse.c; sourceTree = "<group>"; };
-		4A4F799F1F97317500296808 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io.c; path = ../../../nobleape/sim/noble/io.c; sourceTree = "<group>"; };
-		4A4F79A01F97317500296808 /* interpret.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = interpret.c; path = ../../../nobleape/sim/noble/interpret.c; sourceTree = "<group>"; };
-		4A4F79A11F97317500296808 /* territory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = territory.c; path = ../../../nobleape/sim/noble/territory.c; sourceTree = "<group>"; };
-		4A4F79A21F97317500296808 /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shared.h; path = ../../../nobleape/sim/noble/shared.h; sourceTree = "<group>"; };
-		4A4F79A31F97317500296808 /* noble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = noble.h; path = ../../../nobleape/sim/noble/noble.h; sourceTree = "<group>"; };
-		4A4F79A41F97317500296808 /* audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = audio.c; path = ../../../nobleape/sim/noble/audio.c; sourceTree = "<group>"; };
-		4A4F79A51F97317600296808 /* object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object.c; path = ../../../nobleape/sim/noble/object.c; sourceTree = "<group>"; };
-		4A4F79A61F97317600296808 /* land.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = land.c; path = ../../../nobleape/sim/noble/land.c; sourceTree = "<group>"; };
-		4A4F79A71F97317600296808 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compress.c; path = ../../../nobleape/sim/noble/compress.c; sourceTree = "<group>"; };
-		4A4F79A81F97317600296808 /* math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = math.c; path = ../../../nobleape/sim/noble/math.c; sourceTree = "<group>"; };
-		4A4F79B41F97318500296808 /* planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = planet.h; path = ../../planet/planet.h; sourceTree = "<group>"; };
-		4A4F79B51F97318500296808 /* planet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = planet.c; path = ../../planet/planet.c; sourceTree = "<group>"; };
+		4A2AE51F1F99C21500855A9A /* mac.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = mac.xib; path = ../../nobleape/sim/mac/mac.xib; sourceTree = "<group>"; };
+		4A8FCDCC1F98794E00EBEC62 /* Planet Noble Ape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet Noble Ape.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8FCDD21F98794E00EBEC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A8FCDD71F98794E00EBEC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8FCDDA1F98794E00EBEC62 /* Planet_Noble_Ape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Planet_Noble_Ape.entitlements; sourceTree = "<group>"; };
+		4A8FCDE41F98799200EBEC62 /* gldraw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gldraw.c; path = ../../nobleape/sim/noble/gldraw.c; sourceTree = "<group>"; };
+		4A8FCDE51F98799200EBEC62 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = network.c; path = ../../nobleape/sim/noble/network.c; sourceTree = "<group>"; };
+		4A8FCDE61F98799200EBEC62 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parse.c; path = ../../nobleape/sim/noble/parse.c; sourceTree = "<group>"; };
+		4A8FCDE71F98799200EBEC62 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io.c; path = ../../nobleape/sim/noble/io.c; sourceTree = "<group>"; };
+		4A8FCDE81F98799200EBEC62 /* interpret.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = interpret.c; path = ../../nobleape/sim/noble/interpret.c; sourceTree = "<group>"; };
+		4A8FCDE91F98799200EBEC62 /* territory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = territory.c; path = ../../nobleape/sim/noble/territory.c; sourceTree = "<group>"; };
+		4A8FCDEA1F98799200EBEC62 /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shared.h; path = ../../nobleape/sim/noble/shared.h; sourceTree = "<group>"; };
+		4A8FCDEB1F98799200EBEC62 /* noble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = noble.h; path = ../../nobleape/sim/noble/noble.h; sourceTree = "<group>"; };
+		4A8FCDEC1F98799200EBEC62 /* audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = audio.c; path = ../../nobleape/sim/noble/audio.c; sourceTree = "<group>"; };
+		4A8FCDED1F98799200EBEC62 /* object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object.c; path = ../../nobleape/sim/noble/object.c; sourceTree = "<group>"; };
+		4A8FCDEE1F98799200EBEC62 /* land.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = land.c; path = ../../nobleape/sim/noble/land.c; sourceTree = "<group>"; };
+		4A8FCDEF1F98799200EBEC62 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compress.c; path = ../../nobleape/sim/noble/compress.c; sourceTree = "<group>"; };
+		4A8FCDF01F98799200EBEC62 /* math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = math.c; path = ../../nobleape/sim/noble/math.c; sourceTree = "<group>"; };
+		4A8FCDFC1F9879AC00EBEC62 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../nobleape/sim/mac/main.m; sourceTree = "<group>"; };
+		4A8FCDFD1F9879AC00EBEC62 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../nobleape/sim/mac/AppDelegate.m; sourceTree = "<group>"; };
+		4A8FCDFE1F9879AC00EBEC62 /* NobleShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NobleShared.h; path = ../../nobleape/sim/mac/NobleShared.h; sourceTree = "<group>"; };
+		4A8FCDFF1F9879AC00EBEC62 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../nobleape/sim/mac/AppDelegate.h; sourceTree = "<group>"; };
+		4A8FCE001F9879AC00EBEC62 /* NobleMacView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NobleMacView.m; path = ../../nobleape/sim/mac/NobleMacView.m; sourceTree = "<group>"; };
+		4A8FCE011F9879AC00EBEC62 /* NobleMacView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NobleMacView.h; path = ../../nobleape/sim/mac/NobleMacView.h; sourceTree = "<group>"; };
+		4A8FCE021F9879AC00EBEC62 /* NobleShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NobleShared.m; path = ../../nobleape/sim/mac/NobleShared.m; sourceTree = "<group>"; };
+		4A8FCE071F9879BB00EBEC62 /* shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shared.c; path = ../gui/shared.c; sourceTree = "<group>"; };
+		4A8FCE081F9879BB00EBEC62 /* draw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = draw.c; path = ../gui/draw.c; sourceTree = "<group>"; };
+		4A8FCE0B1F9879C800EBEC62 /* planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = planet.h; path = ../planet/planet.h; sourceTree = "<group>"; };
+		4A8FCE0C1F9879C800EBEC62 /* planet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = planet.c; path = ../planet/planet.c; sourceTree = "<group>"; };
+		4A8FCE0F1F98803C00EBEC62 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4A8FCE111F98806300EBEC62 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4A8FCE131F98807B00EBEC62 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A11675F1F972A1D00E9D9A3 /* Frameworks */ = {
+		4A8FCDC91F98794E00EBEC62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8FCE141F98807B00EBEC62 /* Cocoa.framework in Frameworks */,
+				4A8FCE121F98806300EBEC62 /* AppKit.framework in Frameworks */,
+				4A8FCE101F98803C00EBEC62 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A1167591F972A1D00E9D9A3 = {
+		4A8FCDC31F98794E00EBEC62 = {
 			isa = PBXGroup;
 			children = (
-				4A4F798C1F97311F00296808 /* mac */,
-				4A4F798B1F97310600296808 /* gui */,
-				4A4F798A1F97310200296808 /* noble */,
-				4A4F79891F9730E900296808 /* planet */,
-				4A1167641F972A1D00E9D9A3 /* Planet Noble Ape */,
-				4A1167631F972A1D00E9D9A3 /* Products */,
+				4A8FCDE31F98796600EBEC62 /* noble */,
+				4A8FCDE21F98796200EBEC62 /* mac */,
+				4A8FCDE11F98795E00EBEC62 /* gui */,
+				4A8FCDE01F98795A00EBEC62 /* planet */,
+				4A8FCDCE1F98794E00EBEC62 /* Planet Noble Ape */,
+				4A8FCDCD1F98794E00EBEC62 /* Products */,
+				4A8FCE0E1F98803C00EBEC62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4A1167631F972A1D00E9D9A3 /* Products */ = {
+		4A8FCDCD1F98794E00EBEC62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A1167621F972A1D00E9D9A3 /* Planet Noble Ape.app */,
+				4A8FCDCC1F98794E00EBEC62 /* Planet Noble Ape.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A1167641F972A1D00E9D9A3 /* Planet Noble Ape */ = {
+		4A8FCDCE1F98794E00EBEC62 /* Planet Noble Ape */ = {
 			isa = PBXGroup;
 			children = (
-				4A1167681F972A1D00E9D9A3 /* Assets.xcassets */,
-				4A11676A1F972A1D00E9D9A3 /* MainMenu.xib */,
-				4A11676D1F972A1D00E9D9A3 /* Info.plist */,
-				4A1167701F972A1D00E9D9A3 /* Planet_Noble_Ape.entitlements */,
+				4A8FCDD21F98794E00EBEC62 /* Assets.xcassets */,
+				4A8FCDD71F98794E00EBEC62 /* Info.plist */,
+				4A8FCDDA1F98794E00EBEC62 /* Planet_Noble_Ape.entitlements */,
 			);
 			path = "Planet Noble Ape";
 			sourceTree = "<group>";
 		};
-		4A4F79891F9730E900296808 /* planet */ = {
+		4A8FCDE01F98795A00EBEC62 /* planet */ = {
 			isa = PBXGroup;
 			children = (
-				4A4F79B51F97318500296808 /* planet.c */,
-				4A4F79B41F97318500296808 /* planet.h */,
+				4A8FCE0C1F9879C800EBEC62 /* planet.c */,
+				4A8FCE0B1F9879C800EBEC62 /* planet.h */,
 			);
 			name = planet;
-			path = "Planet Noble Ape";
 			sourceTree = "<group>";
 		};
-		4A4F798A1F97310200296808 /* noble */ = {
+		4A8FCDE11F98795E00EBEC62 /* gui */ = {
 			isa = PBXGroup;
 			children = (
-				4A4F79A41F97317500296808 /* audio.c */,
-				4A4F79A71F97317600296808 /* compress.c */,
-				4A4F799C1F97317500296808 /* gldraw.c */,
-				4A4F79A01F97317500296808 /* interpret.c */,
-				4A4F799F1F97317500296808 /* io.c */,
-				4A4F79A61F97317600296808 /* land.c */,
-				4A4F79A81F97317600296808 /* math.c */,
-				4A4F799D1F97317500296808 /* network.c */,
-				4A4F79A31F97317500296808 /* noble.h */,
-				4A4F79A51F97317600296808 /* object.c */,
-				4A4F799E1F97317500296808 /* parse.c */,
-				4A4F79A21F97317500296808 /* shared.h */,
-				4A4F79A11F97317500296808 /* territory.c */,
-			);
-			name = noble;
-			path = "Planet Noble Ape";
-			sourceTree = "<group>";
-		};
-		4A4F798B1F97310600296808 /* gui */ = {
-			isa = PBXGroup;
-			children = (
-				4A4F79991F97315A00296808 /* draw.c */,
-				4A4F79981F97315A00296808 /* shared.c */,
+				4A8FCE081F9879BB00EBEC62 /* draw.c */,
+				4A8FCE071F9879BB00EBEC62 /* shared.c */,
 			);
 			name = gui;
-			path = "Planet Noble Ape";
 			sourceTree = "<group>";
 		};
-		4A4F798C1F97311F00296808 /* mac */ = {
+		4A8FCDE21F98796200EBEC62 /* mac */ = {
 			isa = PBXGroup;
 			children = (
-				4A4F79901F97314700296808 /* AppDelegate.h */,
-				4A4F798E1F97314700296808 /* AppDelegate.m */,
-				4A4F798D1F97314700296808 /* main.m */,
-				4A4F79921F97314800296808 /* NobleMacView.h */,
-				4A4F79911F97314800296808 /* NobleMacView.m */,
-				4A4F798F1F97314700296808 /* NobleShared.h */,
-				4A4F79931F97314800296808 /* NobleShared.m */,
+				4A2AE51F1F99C21500855A9A /* mac.xib */,
+				4A8FCDFF1F9879AC00EBEC62 /* AppDelegate.h */,
+				4A8FCDFD1F9879AC00EBEC62 /* AppDelegate.m */,
+				4A8FCDFC1F9879AC00EBEC62 /* main.m */,
+				4A8FCE011F9879AC00EBEC62 /* NobleMacView.h */,
+				4A8FCE001F9879AC00EBEC62 /* NobleMacView.m */,
+				4A8FCDFE1F9879AC00EBEC62 /* NobleShared.h */,
+				4A8FCE021F9879AC00EBEC62 /* NobleShared.m */,
 			);
 			name = mac;
-			path = "Planet Noble Ape";
+			sourceTree = "<group>";
+		};
+		4A8FCDE31F98796600EBEC62 /* noble */ = {
+			isa = PBXGroup;
+			children = (
+				4A8FCDEC1F98799200EBEC62 /* audio.c */,
+				4A8FCDEF1F98799200EBEC62 /* compress.c */,
+				4A8FCDE41F98799200EBEC62 /* gldraw.c */,
+				4A8FCDE81F98799200EBEC62 /* interpret.c */,
+				4A8FCDE71F98799200EBEC62 /* io.c */,
+				4A8FCDEE1F98799200EBEC62 /* land.c */,
+				4A8FCDF01F98799200EBEC62 /* math.c */,
+				4A8FCDE51F98799200EBEC62 /* network.c */,
+				4A8FCDEB1F98799200EBEC62 /* noble.h */,
+				4A8FCDED1F98799200EBEC62 /* object.c */,
+				4A8FCDE61F98799200EBEC62 /* parse.c */,
+				4A8FCDEA1F98799200EBEC62 /* shared.h */,
+				4A8FCDE91F98799200EBEC62 /* territory.c */,
+			);
+			name = noble;
+			sourceTree = "<group>";
+		};
+		4A8FCE0E1F98803C00EBEC62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A8FCE131F98807B00EBEC62 /* Cocoa.framework */,
+				4A8FCE111F98806300EBEC62 /* AppKit.framework */,
+				4A8FCE0F1F98803C00EBEC62 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A1167611F972A1D00E9D9A3 /* Planet Noble Ape */ = {
+		4A8FCDCB1F98794E00EBEC62 /* Planet Noble Ape */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A1167731F972A1D00E9D9A3 /* Build configuration list for PBXNativeTarget "Planet Noble Ape" */;
+			buildConfigurationList = 4A8FCDDD1F98794E00EBEC62 /* Build configuration list for PBXNativeTarget "Planet Noble Ape" */;
 			buildPhases = (
-				4A11675E1F972A1D00E9D9A3 /* Sources */,
-				4A11675F1F972A1D00E9D9A3 /* Frameworks */,
-				4A1167601F972A1D00E9D9A3 /* Resources */,
+				4A8FCDC81F98794E00EBEC62 /* Sources */,
+				4A8FCDC91F98794E00EBEC62 /* Frameworks */,
+				4A8FCDCA1F98794E00EBEC62 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -176,25 +192,25 @@
 			);
 			name = "Planet Noble Ape";
 			productName = "Planet Noble Ape";
-			productReference = 4A1167621F972A1D00E9D9A3 /* Planet Noble Ape.app */;
+			productReference = 4A8FCDCC1F98794E00EBEC62 /* Planet Noble Ape.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4A11675A1F972A1D00E9D9A3 /* Project object */ = {
+		4A8FCDC41F98794E00EBEC62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Thomas Barbalet";
 				TargetAttributes = {
-					4A1167611F972A1D00E9D9A3 = {
+					4A8FCDCB1F98794E00EBEC62 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 4A11675D1F972A1D00E9D9A3 /* Build configuration list for PBXProject "Planet Noble Ape" */;
+			buildConfigurationList = 4A8FCDC71F98794E00EBEC62 /* Build configuration list for PBXProject "Planet Noble Ape" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,69 +218,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 4A1167591F972A1D00E9D9A3;
-			productRefGroup = 4A1167631F972A1D00E9D9A3 /* Products */;
+			mainGroup = 4A8FCDC31F98794E00EBEC62;
+			productRefGroup = 4A8FCDCD1F98794E00EBEC62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A1167611F972A1D00E9D9A3 /* Planet Noble Ape */,
+				4A8FCDCB1F98794E00EBEC62 /* Planet Noble Ape */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4A1167601F972A1D00E9D9A3 /* Resources */ = {
+		4A8FCDCA1F98794E00EBEC62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A1167691F972A1D00E9D9A3 /* Assets.xcassets in Resources */,
-				4A11676C1F972A1D00E9D9A3 /* MainMenu.xib in Resources */,
+				4A8FCDD31F98794E00EBEC62 /* Assets.xcassets in Resources */,
+				4A2AE5201F99C21500855A9A /* mac.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A11675E1F972A1D00E9D9A3 /* Sources */ = {
+		4A8FCDC81F98794E00EBEC62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4F79AB1F97317600296808 /* parse.c in Sources */,
-				4A4F79951F97314800296808 /* AppDelegate.m in Sources */,
-				4A4F79AD1F97317600296808 /* interpret.c in Sources */,
-				4A4F79B31F97317600296808 /* math.c in Sources */,
-				4A4F799B1F97315A00296808 /* draw.c in Sources */,
-				4A4F799A1F97315A00296808 /* shared.c in Sources */,
-				4A4F79961F97314800296808 /* NobleMacView.m in Sources */,
-				4A4F79AF1F97317600296808 /* audio.c in Sources */,
-				4A4F79B21F97317600296808 /* compress.c in Sources */,
-				4A4F79AC1F97317600296808 /* io.c in Sources */,
-				4A4F79B01F97317600296808 /* object.c in Sources */,
-				4A4F79B61F97318500296808 /* planet.c in Sources */,
-				4A4F79AA1F97317600296808 /* network.c in Sources */,
-				4A4F79B11F97317600296808 /* land.c in Sources */,
-				4A4F79AE1F97317600296808 /* territory.c in Sources */,
-				4A4F79941F97314800296808 /* main.m in Sources */,
-				4A4F79971F97314800296808 /* NobleShared.m in Sources */,
-				4A4F79A91F97317600296808 /* gldraw.c in Sources */,
+				4A8FCE091F9879BB00EBEC62 /* shared.c in Sources */,
+				4A8FCDFB1F98799300EBEC62 /* math.c in Sources */,
+				4A8FCDF61F98799300EBEC62 /* territory.c in Sources */,
+				4A8FCDF21F98799300EBEC62 /* network.c in Sources */,
+				4A8FCDF81F98799300EBEC62 /* object.c in Sources */,
+				4A8FCDF91F98799300EBEC62 /* land.c in Sources */,
+				4A8FCE0A1F9879BB00EBEC62 /* draw.c in Sources */,
+				4A8FCE051F9879AC00EBEC62 /* NobleMacView.m in Sources */,
+				4A8FCDF41F98799300EBEC62 /* io.c in Sources */,
+				4A8FCE0D1F9879C800EBEC62 /* planet.c in Sources */,
+				4A8FCDF71F98799300EBEC62 /* audio.c in Sources */,
+				4A8FCDF51F98799300EBEC62 /* interpret.c in Sources */,
+				4A8FCDFA1F98799300EBEC62 /* compress.c in Sources */,
+				4A8FCE061F9879AC00EBEC62 /* NobleShared.m in Sources */,
+				4A8FCDF11F98799300EBEC62 /* gldraw.c in Sources */,
+				4A8FCE031F9879AC00EBEC62 /* main.m in Sources */,
+				4A8FCDF31F98799300EBEC62 /* parse.c in Sources */,
+				4A8FCE041F9879AC00EBEC62 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		4A11676A1F972A1D00E9D9A3 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A11676B1F972A1D00E9D9A3 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		4A1167711F972A1D00E9D9A3 /* Debug */ = {
+		4A8FCDDB1F98794E00EBEC62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -319,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		4A1167721F972A1D00E9D9A3 /* Release */ = {
+		4A8FCDDC1F98794E00EBEC62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -367,7 +372,7 @@
 			};
 			name = Release;
 		};
-		4A1167741F972A1D00E9D9A3 /* Debug */ = {
+		4A8FCDDE1F98794E00EBEC62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -381,7 +386,7 @@
 			};
 			name = Debug;
 		};
-		4A1167751F972A1D00E9D9A3 /* Release */ = {
+		4A8FCDDF1F98794E00EBEC62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -398,25 +403,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A11675D1F972A1D00E9D9A3 /* Build configuration list for PBXProject "Planet Noble Ape" */ = {
+		4A8FCDC71F98794E00EBEC62 /* Build configuration list for PBXProject "Planet Noble Ape" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A1167711F972A1D00E9D9A3 /* Debug */,
-				4A1167721F972A1D00E9D9A3 /* Release */,
+				4A8FCDDB1F98794E00EBEC62 /* Debug */,
+				4A8FCDDC1F98794E00EBEC62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A1167731F972A1D00E9D9A3 /* Build configuration list for PBXNativeTarget "Planet Noble Ape" */ = {
+		4A8FCDDD1F98794E00EBEC62 /* Build configuration list for PBXNativeTarget "Planet Noble Ape" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A1167741F972A1D00E9D9A3 /* Debug */,
-				4A1167751F972A1D00E9D9A3 /* Release */,
+				4A8FCDDE1F98794E00EBEC62 /* Debug */,
+				4A8FCDDF1F98794E00EBEC62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4A11675A1F972A1D00E9D9A3 /* Project object */;
+	rootObject = 4A8FCDC41F98794E00EBEC62 /* Project object */;
 }
