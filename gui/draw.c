@@ -82,7 +82,9 @@ n_double		rm[9]={
 };
 
 n_int			points[MAXPNTS*3];
-n_uint          numpn;
+n_uint          number_points;
+n_uint          number_points_water;
+
 
 n_int draw_error(n_constant_string error_text, n_constant_string location, n_int line_number)
 {
@@ -376,7 +378,7 @@ long gpi_init(unsigned long kseed){
     n_audio	land_z[131072];
   
 	while (major < 512) {
-		sv[major] = sin((double)(DDC_PI * major) / 256);
+		sv[major] = sin((n_double)(DDC_PI * major) / 256);
 		major++;
 	}
     while (minor < 131072) {
@@ -426,7 +428,7 @@ long gpi_init(unsigned long kseed){
 
 		refine++;
 	}
-	numpn = 0;
+	number_points = 0;
 	py = 0;
 	while (py < 255) {
 		px = 0;
@@ -439,22 +441,38 @@ long gpi_init(unsigned long kseed){
 				refine = 0;
 			if ((val3 >> CCUTNUM) != (land_z[val2 + 512] >> CCUTNUM))
 				refine = 0;
-			if (refine == 0 && numpn < MAXPNTS) {
-				draw_point_2d_3d(val3, px, py, &points[(numpn*3)]);
-				numpn++;
+			if (refine == 0 && number_points < MAXPNTS) {
+				draw_point_2d_3d(val3, px, py, &points[(number_points*3)]);
+				number_points++;
 			}
-#ifdef WATER_RENDERED
-			if((val3 <= WATER_LEVEL) && ((px&1) == 0)&&((py&1) == 0))
-				refine = 1;
-			if (refine == 1 && numpn < MAXPNTS) {
-				draw_point_2d_3d(0, px, py, &points[(numpn*3)]);
-				numpn++;
-			}
-#endif
 			px++;
 		}
 		py++;
 	}
+    
+    number_points_water = 0;
+    py = 0;
+    while (py < 255) {
+        px = 0;
+        while (px < 512) {
+            n_uint val2 = px + (py << 9);
+            n_int           val3 = land_z[val2];
+            refine = 255;
+
+#ifdef WATER_RENDERED
+            if((val3 <= WATER_LEVEL) && ((px&1) == 0)&&((py&1) == 0))
+            {
+                refine = 1;
+            }
+            if (refine == 1 && (number_points + number_points_water) < MAXPNTS) {
+                draw_point_2d_3d(0, px, py, &points[((number_points + number_points_water)*3)]);
+                number_points_water++;
+            }
+#endif
+            px++;
+        }
+        py++;
+    }
 	find_dxdy(land_z, pres, dl);
 	draw_weather(pres);
     return 1;
@@ -511,14 +529,17 @@ void   gpi_cycle(void){
     
     gldraw_start_points();
     gldraw_grey();
-    draw_3d_points( points , numpn );
-
+    draw_3d_points( points , number_points );
+#ifdef WATER_RENDERED
+    gldraw_blue_clear();
+    draw_3d_points( &points[number_points*3] , number_points_water );
+#endif
 #ifdef WEATHER_RENDERED
     deetee(pres,dl);
     if((landtime&BINARY_NUMBER)==0){
         draw_weather(pres);
     }
-    gldraw_lightgrey();
+    gldraw_lightgrey_clear();
     draw_3d_points( weather_points , num_weather_points );
 #endif
     gldraw_end_points();
