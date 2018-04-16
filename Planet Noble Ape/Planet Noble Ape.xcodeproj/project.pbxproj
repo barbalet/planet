@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A2AE5201F99C21500855A9A /* mac.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2AE51F1F99C21500855A9A /* mac.xib */; };
+		4A351A38208468FB00D59A3A /* planet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A351A37208468FA00D59A3A /* planet.xib */; };
 		4A8FCDD31F98794E00EBEC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8FCDD21F98794E00EBEC62 /* Assets.xcassets */; };
 		4A8FCDF11F98799300EBEC62 /* gldraw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE41F98799200EBEC62 /* gldraw.c */; };
 		4A8FCDF21F98799300EBEC62 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCDE51F98799200EBEC62 /* network.c */; };
@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A2AE51F1F99C21500855A9A /* mac.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = mac.xib; path = ../../nobleape/sim/mac/mac.xib; sourceTree = "<group>"; };
+		4A351A37208468FA00D59A3A /* planet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = planet.xib; path = ../planet/planet.xib; sourceTree = "<group>"; };
 		4A44CA0F20841F34000D6740 /* gldraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gldraw.h; path = ../../nobleape/sim/noble/gldraw.h; sourceTree = "<group>"; };
 		4A8FCDCC1F98794E00EBEC62 /* Planet Noble Ape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet Noble Ape.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8FCDD21F98794E00EBEC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +116,7 @@
 		4A8FCDE01F98795A00EBEC62 /* planet */ = {
 			isa = PBXGroup;
 			children = (
+				4A351A37208468FA00D59A3A /* planet.xib */,
 				4A8FCE0C1F9879C800EBEC62 /* planet.c */,
 				4A8FCE0B1F9879C800EBEC62 /* planet.h */,
 			);
@@ -134,7 +135,6 @@
 		4A8FCDE21F98796200EBEC62 /* mac */ = {
 			isa = PBXGroup;
 			children = (
-				4A2AE51F1F99C21500855A9A /* mac.xib */,
 				4A8FCDFF1F9879AC00EBEC62 /* AppDelegate.h */,
 				4A8FCDFD1F9879AC00EBEC62 /* AppDelegate.m */,
 				4A8FCDFC1F9879AC00EBEC62 /* main.m */,
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8FCDD31F98794E00EBEC62 /* Assets.xcassets in Resources */,
-				4A2AE5201F99C21500855A9A /* mac.xib in Resources */,
+				4A351A38208468FB00D59A3A /* planet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

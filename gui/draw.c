@@ -41,8 +41,8 @@
 #include "gldraw.h"
 #include "planet.h"
 
-#define     GPI_DIMENSION_X 800
-#define     GPI_DIMENSION_Y 600
+#define     GPI_DIMENSION_X 1024
+#define     GPI_DIMENSION_Y 768
 
 #define		DDC_PI		  	(3.14159265358979323846)
 
@@ -506,7 +506,7 @@ static void	draw_3d_points(n_int * pnts, n_uint loopend){
 			act_y = (act_y * scr_z)>> BITSHIFT;
 			act_z = (act_z * scr_z)>> BITSHIFT;
 			scr.x = (((a0 * act_x) + (a1 * act_y) + (a2 * act_z) )>>(BITSHIFT*2)) + (SCRX>>BITSHIFT);
-			scr.y = (((a3 * act_x) + (a4 * act_y) + (a5 * act_z) )>>(BITSHIFT*2)) + (SCRY>>BITSHIFT);
+			scr.y = (((a3 * act_x) + (a4 * act_y) + (a5 * act_z) )>>(BITSHIFT*2)) + (SCRY>>BITSHIFT) - 64;
             
             gldraw_vertex(&scr);
             
