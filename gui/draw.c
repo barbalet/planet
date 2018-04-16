@@ -38,6 +38,7 @@
 #include <stdlib.h>
 
 #include "noble.h"
+#include "gldraw.h"
 #include "planet.h"
 
 #define     GPI_DIMENSION_X 800

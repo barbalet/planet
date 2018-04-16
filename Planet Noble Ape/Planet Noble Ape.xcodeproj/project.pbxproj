@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		4A2AE51F1F99C21500855A9A /* mac.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = mac.xib; path = ../../nobleape/sim/mac/mac.xib; sourceTree = "<group>"; };
+		4A44CA0F20841F34000D6740 /* gldraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gldraw.h; path = ../../nobleape/sim/noble/gldraw.h; sourceTree = "<group>"; };
 		4A8FCDCC1F98794E00EBEC62 /* Planet Noble Ape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet Noble Ape.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8FCDD21F98794E00EBEC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A8FCDD71F98794E00EBEC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		4A8FCDE31F98796600EBEC62 /* noble */ = {
 			isa = PBXGroup;
 			children = (
+				4A44CA0F20841F34000D6740 /* gldraw.h */,
 				4A8FCDEC1F98799200EBEC62 /* audio.c */,
 				4A8FCDEF1F98799200EBEC62 /* compress.c */,
 				4A8FCDE41F98799200EBEC62 /* gldraw.c */,
