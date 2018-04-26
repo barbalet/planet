@@ -30,6 +30,7 @@
 		4A8FCE101F98803C00EBEC62 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FCE0F1F98803C00EBEC62 /* OpenGL.framework */; };
 		4A8FCE121F98806300EBEC62 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FCE111F98806300EBEC62 /* AppKit.framework */; };
 		4A8FCE141F98807B00EBEC62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FCE131F98807B00EBEC62 /* Cocoa.framework */; };
+		5A5A2BC7209184A00051FC71 /* tile.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A2BC6209184A00051FC71 /* tile.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		4A8FCE0F1F98803C00EBEC62 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		4A8FCE111F98806300EBEC62 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4A8FCE131F98807B00EBEC62 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5A5A2BC6209184A00051FC71 /* tile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tile.c; path = ../../nobleape/sim/noble/tile.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		4A8FCDE31F98796600EBEC62 /* noble */ = {
 			isa = PBXGroup;
 			children = (
+				5A5A2BC6209184A00051FC71 /* tile.c */,
 				4A44CA0F20841F34000D6740 /* gldraw.h */,
 				4A8FCDEC1F98799200EBEC62 /* audio.c */,
 				4A8FCDEF1F98799200EBEC62 /* compress.c */,
@@ -256,6 +259,7 @@
 				4A8FCE0A1F9879BB00EBEC62 /* draw.c in Sources */,
 				4A8FCE051F9879AC00EBEC62 /* NobleMacView.m in Sources */,
 				4A8FCDF41F98799300EBEC62 /* io.c in Sources */,
+				5A5A2BC7209184A00051FC71 /* tile.c in Sources */,
 				4A8FCE0D1F9879C800EBEC62 /* planet.c in Sources */,
 				4A8FCDF71F98799300EBEC62 /* audio.c in Sources */,
 				4A8FCDF51F98799300EBEC62 /* interpret.c in Sources */,
@@ -312,6 +316,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					NOBLE_PLANET,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -362,6 +367,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = NOBLE_PLANET;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
